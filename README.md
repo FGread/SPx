@@ -6,7 +6,7 @@
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a>
 </p>
 
-**SPx** is a tool for processing spectral data (including but not limited to Near-Infrared (NIR)),
+**SPx** is a free software tool designed for processing spectral data (including but not limited to Near-Infrared (NIR)),
 extracting features, generating visualizations and statistics, and applying linear spectral unmixing (LSUMx) to retrieve smectite content from measured NIR spectra.
 
 The spectrum processing code (main) was adapted from [Cardoso-Fernandes et al. (2021)](http://doi.org/10.5281/zenodo.4575375), and the prediction and unmixing code was created based on this study [Gread et al. (2025)](https://doi.org/10.1016/j.clay.2025.107748).
