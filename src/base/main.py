@@ -55,7 +55,7 @@ def process_spectra(show_plots=True):
         except Exception as e:
             logger.error(f"Error reading file {spectra_paths[i]}: {str(e)}")
             continue
-
+# Plot the spectra and save the figure output
     for key, value in tqdm(spectra.items(), desc="Plotting original spectra", unit="plot"):
         plt.figure()
         ax = plt.gca()
@@ -114,7 +114,7 @@ def process_spectra(show_plots=True):
             b_stats_keep = b_stats[is_keep]
             csv_path = os.path.join(_data_path, key + '.csv')
             b_stats_keep.to_csv(csv_path, sep=',', index=False)
-
+#extracting the statistics related to each feature
             _data = b_stats_keep.loc[:]
             _data['filename'] = key
             _data['peak'] = key.split('-peak-')[-1]
